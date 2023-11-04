@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測試</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/base.css"> -->
+</head>
+<body>
+    <form enctype="multipart/form-data" id="messageForm">
+        <div class="messageboardsubtitle">
+            <div class="messageboardsubtitle-text">文字內容</div>
+            <input type="text" id="textInput" name="caption" value="" required />
+        </div>
+        <div class="messageboardsubtitle">
+            <div class="messageboardsubtitle-text">圖片檔案</div>
+            <input type="file" id="imageInput" name="image" accept="image/*" value="" required />
+        </div>
+        <button type="submit" id="submitButton">送出</button>
+    </form>
+    <hr>
+    <div id="msgBoard">
+    </div>
+    <script type="text/javascript" src="/upload.js"></script>
+</body>
+</html>
